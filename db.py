@@ -9,6 +9,9 @@ def get_all():
 def get_by_id(id):
     return grocery.get(doc_id=id)
 
+def get_by_price(min, max):
+    return grocery.search(Query().price >= min and Query().price <= max)
+
 def insert(data):
     return grocery.insert(data)
 
