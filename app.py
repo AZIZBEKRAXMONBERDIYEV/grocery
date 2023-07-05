@@ -25,6 +25,16 @@ def in_range():
 
     return render_template('index.html', groceries=groceries)
 
+# delete route
+@app.route('/delete/<int:id>')
+def delete_grocery(id: int):
+    pass
+
+# insert route
+@app.route('/insert', methods=['POST'])
+def insert_grocery():
+    pass
+
 
 if __name__ == '__main__':
     app.run(debug=True)
