@@ -8,7 +8,7 @@
     <p>Here is a list of groceries:</p>
     <ul>
         {% for grocery in groceries %}
-            <li>{{ grocery.name }}  #{{ grocery.doc_id }}</li>
+            <li><a href="/details/{{ grocery.doc_id }}">{{ grocery.name }}</a></li>
         {% endfor %}
     </ul>
 </body>
