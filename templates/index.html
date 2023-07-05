@@ -1,0 +1,14 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>My first PHP Website</title>
+</head>
+<body>
+    <h2>Grocery</h2>
+    <p>Here is a list of groceries:</p>
+    <ul>
+        {% for grocery in groceries %}
+            <li>{{ grocery.name }}  #{{ grocery.doc_id }}</li>
+        {% endfor %}
+    </ul>
+</body>
