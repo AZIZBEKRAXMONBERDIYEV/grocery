@@ -10,6 +10,12 @@ def index():
 
     return render_template('index.html', groceries=groceries)
 
+@app.route('/<id>')
+def id(id):
+    grocery = get_by_id(id)
+
+    return render_template('id.html',  grocery= grocery)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
