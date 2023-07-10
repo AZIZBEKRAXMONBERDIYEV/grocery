@@ -1,14 +1,13 @@
 <DOCTYPE html>
 <html>
 <head>
-    <title>My first PHP Website</title>
+    <title>navbatchi</title>
 </head>
 <body>
-    <h2>Grocery</h2>
-    <p>Here is a list of groceries:</p>
+    <h2>xona navbatchisi:</h2>
     <ul>
         {% for grocery in groceries %}
-            <li><a href="/details/{{ grocery.doc_id }}">{{ grocery.name }}</a></li>
+            <li><a href="/id/{{ grocery.doc_id }}">{{ grocery.isim }}</a></li>
         {% endfor %}
     </ul>
 </body>
